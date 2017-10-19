@@ -1,0 +1,117 @@
+/* .center-justified {
+  text-align:center;
+  text-align: justify;
+  margin: 10 auto;
+  width: 30em;
+} *./
+
+div {
+  text-align:center;
+  white-space:nowrap;
+}
+ 
+img {
+  vertical-align:middle;
+}
+
+.imageCentre {
+    text-align:center
+}
+
+a:hover
+{
+/*   color: #1fad9e; */
+    color: #206e87;
+}
+
+.clicker { 
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    padding: 2px;
+    color: #92999b;
+}
+
+.main_clicker { 
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    padding: 2px;
+    color: #92999b;
+}
+
+.main_clicker:hover {
+    color: #ffffff;
+}
+
+.clicker_href { 
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    padding: 2px;
+}
+
+.clicker_href:hover {
+
+}
+
+
+h1 w: {
+   font-size: 60px;	
+   color: #ffffff;
+}
+
+h2 w {
+    font-size: 45px;	
+    text-align: center;
+    color: #ffffff;
+}
+
+h3 w {
+    color: #ffffff;
+    text-align: center;
+}
+
+h4 w {
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;	
+/*    border-left: 3px solid black; */
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;	
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+
+h5 {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+p {
+ font-size:14px;
+ width:800px;
+ padding:10px;
+ margin:auto;
+ font-family:Times, serif;
+ }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+      <title> 
+	MY-APP
+      </title>
+      
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="{% static 'my_app/css/style.css' %}">
+      
+    </head>
+    
+    <style>
+      .parallax {
+      /* The image used */
+      background-image: url("{% static 'my_app/images/banner.jpg' %}");
+      
+      /* Set a specific height */
+      min-height: 450px; 
+      
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+    </style>
+    
+    <div class="parallax">
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <a href="/my_app/" class="main_clicker" style="text-decoration:none;"> <h1> <w> MY-APP </h1> </w> </a>      
+      <h3> <w> Enjoy this template to build your app </w> </h3>
+      <h4> <w> {{ date }} </w> </h4>
+
+      <br>
+      <a href="/my_app/about" style="text-decoration:none;"> <h2> <w> About </h2> </w> </a>      
+    </div>
+        
+    <body>
+      <br>
+      <br>
+
+      <p>
+	Our understanding of the star formation in galaxies is highly constraint by our knowledge of the physical processes 
+	which govern the interstellar gas. Stars form by gravitational instabilities and turbulent compression 
+	(see <a href="http://adsabs.harvard.edu/abs/2004ARA%26A..42..211E"> Elmegreen, B. G. 2004 </a> for a review) 
+	in very dense and cold (T~10 K) molecular clouds whose formation is strongly constraint by the structure of the cold clouds of neutral hydrogen (HI).
+	The current vision of the neutral ISM comes from an important legacy. 
+	<a href="http://adsabs.harvard.edu/abs/1969ApJ...155L.149F"> Field, G., Goldsmith, D., & Habing, H. 1969 </a> 
+	has postulated a two phase model to describe the neutral hydrogen in the ISM : A cold (T~50K, n~50 cm-3) dense phase, 
+	the cold neutral medium (CNM) and a diffuse warm (T~8000K, n~0.1 cm-3) phase, the warm neutral medium (WNM). A more complex 
+	description of the ISM, including a warm ionized medium (WIM) and a hot ionized medium (HIM), has been established by 
+	<a href="http://adsabs.harvard.edu/abs/1977ApJ...218..148M"> McKee, C. F. & Ostriker, J. P. 1977 </a>. Considering heating 
+	(dominated by photo-electric effect on small dust grains) and cooling (dominated by CII-158 micrometer, OI-63 micrometer, 
+	Lyman-alpha and electron recombinations onto positive charged grains) processes of the ISM, it is commonly accepted that the 
+	cold and warm phases can coexist being in two thermally stable phases in pressure equilibrium over a range of pressures 
+	Pmin < P < Pmax (<a href="http://adsabs.harvard.edu/abs/2003ApJ...587..278W"> Wolfire, M. G., McKee, C. F., Hollenbach, D., & Tielens, A. 2003 </a>).
+		   
+		   <br>
+		   <br>
+		   The most commoly used technique to extract information about the cold and warm phases in emission 
+		   is the Gaussian decomposition. The result presented here is performed on
+		   <a href="http://adsabs.harvard.edu/abs/2016A%26A...594A.116H"> HI4PI </a>
+		   (a full sky survey of the 21 cm line) with a code developped at the 
+		   <a href="https://www.ias.u-psud.fr">Institut d'Astrophysique Spatiale</a> (IAS) which take into consideration 
+		   a spatial coherence of the field to find a solution. 
+      </p>
+
+      <br>
+
+      <center>
+	<a href="/my_app/query/" style="text-decoration:none; display: inline-block;"> <h4> Query </h4> </a> 
+      </center>
+
+<!--       <h5> -->
+<!-- 	<a href="{% static 'my_app/data/HI4PI_gaussian.fits' %}" class="clicker_href" style="text-decoration:none;" download>  -->
+<!-- 	  Downloads </a> <br> -->
+<!-- 	<br> -->
+<!--       </h5> -->
+
+      <br>
+      
+      <h6>
+        <br>
+	<footer>&copy; <a href="https://github.com/antoinemarchal" class="clicker_href" style="text-decoration:none;"> 
+	  Antoine Marchal </a> <br>
+	</footer>
+      </h6>
+      <br>
+      <br>
+
+    </body>
+</html>
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+      <title> 
+	MY-APP
+      </title>
+      
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="{% static 'my_app/css/style.css' %}">
+      
+    </head>
+    
+    <style>
+      .parallax {
+      /* The image used */
+      background-image: url("{% static 'my_app/images/banner.jpg' %}");
+      
+      /* Set a specific height */
+      min-height: 450px; 
+      
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+    </style>
+    
+    <div class="parallax">
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <a href="/my_app/" class="main_clicker" style="text-decoration:none;"> <h1> <w> MY-APP </h1> </w> </a>      
+      <h3> <w> Enjoy this template to build your app </w> </h3>
+      <h4> <w> {{ date }} </w> </h4>
+
+      <br>
+      <a href="/my_app/query" style="text-decoration:none;"> <h2> <w> Query Map </h2> </w> </a>      
+    </div>
+        
+    <body>
+      <br>
+      <h4>
+	Enter the Galactic Coordonates of your field
+      </h4>
+      <br>
+
+      <center>
+	<form action="{% url "query" %}" method="post">
+	  {% csrf_token %}
+	  {{ form.as_table }}
+	  <input type="submit" value="Submit" />
+	</form>
+      </center>
+     
+      <div>
+	{% if lon or lat%}
+        <br>
+
+          <center>
+            <a style="display: inline-block;"> {{ map|safe }} </a>
+            <a style="display: inline-block;"> {{ map_wnm|safe }} </a>
+            <a style="display: inline-block;"> {{ map_cnm|safe }} </a>
+	  </center>
+
+	  <br>
+         <center>
+           <a style="display: inline-block;"> {{ spectrum|safe }} </a>
+         </center>
+
+        {% else %}
+        {% endif %}
+
+      <br>
+      <br>
+      
+      <h6>
+	<footer>&copy; <a href="https://github.com/antoinemarchal" class="clicker_href" style="text-decoration:none;"> 
+	    Antoine Marchal </a> <br>
+	</footer>
+      </h6>
+      <br>
+      <br>
+
+    </body>
+</html>
+
+<!--       <h2> -->
+<!-- 	{% for pointing in pointings %} -->
+<!-- 	<h3> -->
+<!-- 	  <div class="pointing"> -->
+<!--             {{ pointing.object}} -->
+<!-- 	    <p> my coordonnates are RA = {{ pointing.ra }} and DEC = {{ pointing.dec }} </p> -->
+<!-- 	  </div> -->
+<!-- 	  {% empty %} -->
+<!-- 	  <p>Aucun object.</p> -->
+<!-- 	</h3> -->
+<!-- 	{% endfor %} -->
+<!--       </h2> -->
+	      

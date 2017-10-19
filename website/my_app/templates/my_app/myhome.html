@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+      <title>
+	MY-APP
+      </title>
+      
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="{% static 'my_app/css/style.css' %}">
+      
+    </head>
+    
+    <style>
+      .parallax {
+      /* The image used */
+      background-image: url("{% static 'my_app/images/banner.jpg' %}");
+      
+      /* Set a specific height */
+      min-height: 450px;
+      
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+    </style>
+    
+    <div class="parallax">
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <a href="/my_app/" class="main_clicker" style="text-decoration:none;"> <h1> <w> MY-APP </h1> </w> </a>
+      <h3> <w> Enjoy this template to build your app </w> </h3>
+      <h4> <w> {{ date }} </w> </h4>
+    </div>
+        
+    <body>
+      <h4>
+	Welcome in MY-APP 
+      </h4>
+
+      <center>
+	<a href="/my_app/about/" style="text-decoration:none; display: inline-block;"> <h4> About </h4> </a> 
+	--
+	<a href="/my_app/query/" style="text-decoration:none; display: inline-block;"> <h4> Query </h4> </a> 
+	--
+	<a href="/my_app/code/" style="text-decoration:none; display: inline-block;"> <h4> Code </h4> </a>
+	--
+	<a href="/my_app/references/" style="text-decoration:none; display: inline-block;"> <h4> References </h4> </a>
+
+      </center>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+<!--       <center> -->
+<!-- 	<img src="{% static 'my_app/images/tumblr_0.gif' %}" style="width: 20%; height: 20%" /> -->
+<!--       </center> -->
+      
+      <h6>
+	<footer>&copy; <a href="https://github.com/antoinemarchal" class="clicker_href" style="text-decoration:none;"> 
+	  Antoine Marchal </a> <br>
+	</footer>
+      </h6>
+
+    </body>
+</html>
