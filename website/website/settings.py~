@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'P_HI4PI',
+    'my_app',
 ]
 
 MIDDLEWARE = [
@@ -124,4 +124,4 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'P_HI4PI/media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'my_app/media/')
