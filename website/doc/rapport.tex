@@ -1,0 +1,84 @@
+\documentclass[a4paper,10.5pt]{report}
+\usepackage[top=2.5cm,bottom=3cm,right=3cm,left=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx,graphics,textcomp,setspace,lettrine}
+\usepackage{amsmath,amssymb,amsfonts,indentfirst}
+\usepackage[toc,page]{appendix} 
+\usepackage{float}
+\usepackage{array}
+\usepackage{comment}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{blindtext}
+\usepackage{titling}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{ulem}
+\usepackage{cancel}
+\usepackage{wasysym}
+\usepackage{hyperref}
+%% \usepackage{biblatex}
+
+\graphicspath{{plot/}}
+
+\newcommand{\cfbox}[2]{%
+    \colorlet{currentcolor}{.}%
+    {\color{#1}%
+    \fbox{\color{currentcolor}#2}}%
+}
+
+\usepackage[english, status=draft]{fixme}
+\fxusetheme{color}
+
+\lstset{numbers=left,
+numberstyle=\tiny \bf ,
+stepnumber=1,
+numbersep=10pt,
+firstnumber=1,
+numberfirstline=true}
+
+\lstset{frame=TBlr,
+rulesepcolor=\color{black}}
+
+\DeclareMathOperator{\e}{e}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{}
+
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[C]{\textbf{\thepage}} 
+\fancyfoot[L]{}
+
+\title{{\textsc{\Large{Note}\\ [1cm]
+      \textbf{\LARGE{
+          Website template \\
+          Using Django}}}} \\[1cm]}
+\vfill
+ \author{Antoine Marchal \\ [0.1cm]
+   IAS}
+\date{}
+
+
+\begin{document}
+\begin{titlingpage}
+\maketitle
+\end{titlingpage}
+%% \tableofcontents
+\newpage
+
+\newpage
+%% \chapter*{Introduction}
+%% \addcontentsline{toc}{chapter}{Introduction}
+
+
+\bibliographystyle{alpha}
+\bibliography{references}
+\newpage
+%\listoffixmes
+\end{document}
