@@ -67,7 +67,7 @@ def matplotlib_to_plotly(cmap, pl_entries):
     pl_colorscale = []
     
     for k in range(pl_entries):
-        C = map(np.uint8, np.array(cmap(k*h)[:3])*255)
+        C = list(map(np.uint8, np.array(cmap(k*h)[:3])*255))
         pl_colorscale.append([k*h, 'rgb'+str((C[0], C[1], C[2]))])
         
     return pl_colorscale
